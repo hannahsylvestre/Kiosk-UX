@@ -1,0 +1,986 @@
+* {
+	box-sizing: border-box;
+}
+
+/*PAGE-START*/
+
+.page-start body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-start main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-start h1 {
+	margin: none;
+	max-width: 100%;
+}
+
+.page-start h1 img {
+	height: 15rem;
+}
+
+.page-start .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page-start .btn-primary a {
+	width: 15rem;
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #ff5056;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+}
+
+.page-start .btn-primary a:first-child {
+	margin-right: 2rem;
+}
+
+.page-start a {
+	margin: none;
+	color: #a1cd40;
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+/*PAGE LOGIN*/
+
+.page-login body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+
+}
+
+.page-login header {
+	padding: 3rem;
+}
+
+.page-login header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-login main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-login h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-login .back {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 30px;
+}
+
+.page-login form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-items: center;
+}
+
+.page-login form input {
+	color: #5d5d5d;
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 30px;
+	text-transform: uppercase;
+	border-radius: 15px;
+	border: 1px solid #ff5056;
+
+	padding: 1rem;
+	width: 35rem;
+}
+
+.page-login button {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+	width: 15rem;
+	padding: 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+	text-transform: uppercase;
+	border: none;
+}
+
+.page-login button a {
+	text-decoration: none;
+	color: white;
+}
+
+/*PAGE SIGN UP*/
+
+.page-login body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+
+}
+
+.page-signup header {
+	padding: 3rem;
+}
+
+.page-signup header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-signup main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-signup h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-signup .back {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 30px;
+}
+
+.page-signup form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-items: center;
+}
+
+.page-signup form label {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 20px;
+	padding: .5rem;
+	text-align: left;
+
+}
+
+.page-signup form input {
+	color: #707070;
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 30px;
+	text-transform: uppercase;
+	border-radius: 15px;
+	border: 1px solid #ff5056;
+
+	padding: 1rem;
+	width: 35rem;
+}
+
+.page-signup button {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+	width: 15rem;
+	padding: 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+	text-transform: uppercase;
+	border: none;
+}
+
+.page-signup button a {
+	text-decoration: none;
+	color: white;
+}
+
+/*PAGE WELCOME BACK*/
+
+.page-welcome-back body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-welcome-back main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-welcome-back h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-welcome-back .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page-welcome-back .btn-primary a {
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+}
+
+/*WELCOME*/
+
+.page-welcome body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-welcome main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-welcome h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-welcome .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page-welcome .btn-primary a {
+	
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+}
+
+/*FAVS*/
+
+.page-favs body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-content: center;
+	font-family: quasimoda, sans-serif;
+
+}
+
+.page-favs header {
+	padding: 3rem;
+}
+
+.page-favs header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-favs main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50rem;
+	place-items: center;
+	margin: auto;
+}
+
+.page-favs h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-favs h2{
+	font-family: quasimoda, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 40px;
+}
+
+.page-favs p{
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 25px;
+	text-transform: none;
+}
+
+
+.page-favs .back {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 30px;
+}
+
+.page-favs .prev-order {
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	padding: 2rem;
+	border: 1px solid red;
+	margin-bottom: 1rem;
+}
+
+.page-favs .linkies {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 25px;
+	text-transform: uppercase;
+
+}
+
+.linkies a {
+	text-decoration: none;
+	color: #a1cd40;
+}
+
+.page-favs .linkies a:last-child {
+	justify-self: end;
+}
+
+/*SIZE*/
+
+.page-size body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-size main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-size h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-size img {
+	height: 20rem;
+}
+
+.page-size p {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+}
+
+.page-size .smoothies {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-items: end;
+	margin-bottom: 6rem;
+}
+
+.page-size .small {
+	grid-column: 1;
+	grid-row: 1;
+	height: 12rem;
+}
+
+.page-size .medium {
+	grid-column: 2;
+	grid-row: 1;
+	height: 16rem;
+}
+
+.page-size .large {
+	grid-column: 3;
+	grid-row: 1;
+	height: 20rem;
+}
+
+.page-size .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page-size .btn-primary a {
+	width: 15rem;
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+}
+
+/*BASE*/
+
+.page-base body{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-base header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-base header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+}
+
+.page-base header .next {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-base header .done {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-base header .done a {
+	color: #a1cd40;
+}
+
+
+.page-base header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-base main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-base h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+}
+
+.page-base h4 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 20px;
+}
+
+.wrap {
+  column-count: 2;
+  padding: 1rem;
+}
+
+.page-base form {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	place-items: center;
+	text-align: left;
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 30px;
+	line-height: 3;
+	margin-bottom: 2rem;
+}
+
+.page-base form input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* THIS GETS RID OF THE DEFAULT STYLES, SO HOW DO I GET THE CUSTOM ONES? :(*/
+
+.page-base img {
+	height: 4rem;
+}
+
+.page-base .weight{
+	height: 2.5rem;
+}
+
+.page-base .navigation ul {	
+
+	list-style: none;
+	padding: .5rem;
+	display: grid; 
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	place-items: center;
+	padding: 1rem;
+}
+
+/*DETAILS*/
+
+.page-details body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-details header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.page-details .add-more {
+	grid-column: 6;
+}
+
+.page-details .add-more a {
+	color: #a1cd40;
+
+}
+
+
+.page-details header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+}
+
+.page-details header .next {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-details header .done {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-details header .done a {
+	color: #a1cd40;
+}
+
+
+.page-details header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-details main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+.page-details h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+}
+
+.page-details .order-details {
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 80rem;
+	padding: 2rem;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat (4, auto);
+}
+
+.page-details h2 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 40px;
+	grid-column: 1 / span 2;
+	grid-row: 1;
+}
+
+.page-details h3 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 40px;
+}
+
+.total {
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: end;
+	align-self: start;
+}
+
+.page-details p {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 25px;
+	text-transform: none;
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.page-details .linkies {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 25px;
+	text-transform: uppercase;
+	grid-column: 1/-1;
+	grid-row: 3;
+
+}
+
+.linkies a {
+	text-decoration: none;
+	color: #a1cd40;
+}
+
+.linkies a:last-child {
+	justify-self: end;
+}
+
+.page-details .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	grid-row: 4;
+	grid-column: 1 / -1;
+	justify-self: center;
+	text-align: center;
+}
+
+.page-details .btn-primary a {
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+
+}
+
+/*TOTAL*/
+
+.page-total body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-total header {
+	padding: 3rem;
+}
+
+.page-total header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-total .back {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.page-total main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-total h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-total h3 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #707070;
+	font-size: 40px;
+}
+
+.page-total .btn-primary {
+	padding: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page-total .btn-primary a {
+	padding: 1.25rem 1rem;
+	line-height: 1;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #a1cd40;
+	color: white;
+	text-decoration: none;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+}
+
+.page-total .btn-primary a:first-child {
+	margin-right: 2rem;
+}
+
+/*SCAN*/
+
+.page-scan body  {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-scan header {
+	padding: 3rem;
+}
+
+.page-scan header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-scan .back {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.page-scan main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-scan h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+}
+
+.page-scan img {
+	padding: 3rem;
+	height: 50vh;
+
+}
+
+/*CONFIRMATION*/
+
+
+body .page-confirmation {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-confirmation main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-confirmation h1{
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #a1cd40;
+	font-size: 50px;
+}
+
+.page-confirmation h2{
+	font-family: quasimoda, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 40px;
+}
+
+.page-confirmation h3 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #707070;
+	font-size: 50px;
+}
+
+
+
+
+
