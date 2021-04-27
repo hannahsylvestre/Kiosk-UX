@@ -2,13 +2,15 @@
 	box-sizing: border-box;
 }
 
+body {
+	border: solid 2rem #ff5056;
+}
+
 /*PAGE-START*/
 
-.page-start body {
+.page-start {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
 	place-items: center;
 	font-family: quasimoda, sans-serif;
 }
@@ -36,7 +38,7 @@
 
 .page-start .btn-primary a {
 	width: 15rem;
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -64,23 +66,27 @@
 
 /*PAGE LOGIN*/
 
-.page-login body {
+.page-login {
 	height: 100vh;
-	display: grid;
+/*	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-	place-items: center;
+	place-items: center;*/
 	font-family: quasimoda, sans-serif;
 
 }
 
 .page-login header {
 	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .page-login header a {
 	text-decoration: none;
 	color: #ff5056;
+	align-self: start;
+	grid-column: 1;
 }
 
 .page-login main {
@@ -131,7 +137,6 @@
 	padding: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
-
 	width: 15rem;
 	padding: 1rem;
 	line-height: 1;
@@ -149,29 +154,32 @@
 }
 
 .page-login button a {
+	padding: 1.25rem 2rem 1rem;
 	text-decoration: none;
 	color: white;
 }
 
 /*PAGE SIGN UP*/
 
-.page-login body {
+.page-signup {
 	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+/*	display: grid;
+	place-items: center;*/
 	font-family: quasimoda, sans-serif;
 
 }
 
 .page-signup header {
 	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .page-signup header a {
 	text-decoration: none;
 	color: #ff5056;
+	grid-column: 1;
+	justify-self: start;
 }
 
 .page-signup main {
@@ -230,7 +238,7 @@
 }
 
 .page-signup button {
-	padding: 3rem;
+	padding: 1.25rem 2rem 1rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 
@@ -253,17 +261,37 @@
 .page-signup button a {
 	text-decoration: none;
 	color: white;
+	padding: 1.25rem 2rem 1rem;
 }
 
 /*PAGE WELCOME BACK*/
 
-.page-welcome-back body {
+.page-welcome-back {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+	grid-template-rows: auto, 1fr;
 	font-family: quasimoda, sans-serif;
+}
+
+.page-welcome-back header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.page-welcome-back .account {
+	grid-column: 6;
+}
+
+.page-welcome-back .account a {
+	color: #a1cd40;
+	text-decoration: none;
+	justify-self: end;
+
 }
 
 .page-welcome-back main {
@@ -287,7 +315,7 @@
 }
 
 .page-welcome-back .btn-primary a {
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -300,15 +328,38 @@
 	font-style: normal;
 }
 
+.page-welcome-back .btn-primary a:first-child {
+	margin-right: 2rem;
+}
+
 /*WELCOME*/
 
-.page-welcome body {
+.page-welcome {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+	grid-template-rows: auto, 1fr;
 	font-family: quasimoda, sans-serif;
+}
+
+.page-welcome header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.page-welcome .account {
+	grid-column: 6;
+}
+
+.page-welcome .account a {
+	color: #a1cd40;
+	text-decoration: none;
+	justify-self: end;
+
 }
 
 .page-welcome main {
@@ -333,7 +384,7 @@
 
 .page-welcome .btn-primary a {
 	
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -348,24 +399,47 @@
 
 /*FAVS*/
 
-.page-favs body {
-	height: 100vh;
+.page-favs {
+	/*height: 100vh;*/
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	align-items: center;
 	justify-content: center;
 	font-family: quasimoda, sans-serif;
+	padding: 4rem;
 
 }
 
 .page-favs header {
-	padding: 3rem;
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
 }
 
-.page-favs header a {
-	text-decoration: none;
+.page-favs header .back a {
+	grid-column: 1;
+	grid-row: 1;
 	color: #ff5056;
+	text-decoration: none;
+}
+
+.page-favs header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-favs header .account a {
+	grid-column: 6;
+	grid-row: 1;
+	color: #a1cd40;
+	font-size: 25px;
+	font-weight: 300;
+	text-decoration: none;
 }
 
 .page-favs main {
@@ -402,15 +476,6 @@
 	text-transform: none;
 }
 
-
-.page-favs .back {
-	font-family: quasimoda, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	color: #ff5056;
-	font-size: 30px;
-}
-
 .page-favs .prev-order {
 	align-items: center;
 	justify-content: center;
@@ -444,19 +509,40 @@
 
 /*SIZE*/
 
-.page-size body {
+.page-size {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+	grid-template-rows: auto, 1fr;
 	font-family: quasimoda, sans-serif;
+	padding: 0;
+}
+
+.page-size header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.page-size .account {
+	grid-column: 6;
+	justify-self: end;
+}
+
+.page-size .account a {
+	color: #a1cd40;
+	text-decoration: none;
+
 }
 
 .page-size main {
-	padding: 2rem;
 	text-align: center;
 	text-transform: uppercase;
+	align-self: start;
 }
 
 .page-size h1 {
@@ -465,6 +551,8 @@
 	font-style: normal;
 	color: #ff5056;
 	font-size: 50px;
+	line-height: 1;
+	margin: 0;
 }
 
 .page-size img {
@@ -476,14 +564,111 @@
 	font-weight: 400;
 	font-style: normal;
 	color: #707070;
+	font-size: 1.25rem;
+	text-transform: none;
 }
 
-.page-size .smoothies {
+.page-size form {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	align-items: end;
-	margin-bottom: 6rem;
+	margin-bottom: 0;
+	text-align: center;
+	grid-gap: 3rem;
+	align-items: center;
+	justify-content: center;
+	place-items: center;
+
+}
+
+
+.page-size form label {
+display: block;
+font-size: 4rem;
+border: solid 3px white;
+border-radius: 10px;
+padding: 1rem;
+}
+
+.page-size label p {
+	margin-bottom: 0;
+}
+
+.page-size label p + p {
+	margin-top: 0;
+}
+
+.page-size form label i {
+/*for icons*/
+}
+
+.page-size input:checked + label i {
+  /* this selector applies to Font Awesome icons, if you are using them */
+  /* this would be the selected icon style/color 
+ */
+}
+
+.page-size input:checked + label {
+  /* if you are using a border, this is where you would modify it for a selected state */
+border: solid 3px #a1cd40;
+border-radius: 10px;
+}
+
+.page-size form div:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.page-size form div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.page-size form div:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.page-size button {
+  /* button styles are up to you */
+  border: solid 3px transparent;
+  border-radius: 50px;
+  padding: 1.25rem 2rem 1rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  text-align: center;
+}
+
+.page-size button[type=submit] {
+  /* styles for the submit button */
+  background-color: #a1cd40;
+  grid-column: 2;
+}
+
+.page-size button[disabled][type=submit] {
+  /* styles for the disabled submit button */
+  background-color: #c8ee92;
+ 
+  
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
 }
 
 .page-size .small {
@@ -495,16 +680,16 @@
 .page-size .medium {
 	grid-column: 2;
 	grid-row: 1;
-	height: 16rem;
+	height: 14rem;
 }
 
 .page-size .large {
 	grid-column: 3;
 	grid-row: 1;
-	height: 20rem;
+	height: 16rem;
 }
 
-.page-size .btn-primary {
+/*.page-size .btn-primary {
 	padding: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
@@ -512,7 +697,7 @@
 
 .page-size .btn-primary a {
 	width: 15rem;
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -523,16 +708,16 @@
 	font-weight: 700;
 	font-size: 25px;
 	font-style: normal;
-}
+}*/
 
 /*BASE*/
 
-.page-base body{
+.page-base {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-	place-items: center;
+	/*place-items: center;*/
 	font-family: quasimoda, sans-serif;
 }
 
@@ -551,15 +736,11 @@
 	grid-column: 1;
 	grid-row: 1;
 	color: #ff5056;
-}
-
-.page-base header .next {
-	grid-column: 5;
-	grid-row: 1;
+	justify-self: start;
 }
 
 .page-base header .done {
-	grid-column: 6;
+	grid-column: 5;
 	grid-row: 1;
 }
 
@@ -567,6 +748,16 @@
 	color: #a1cd40;
 }
 
+.page-base header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-base header .account a {
+	color: #a1cd40;
+	font-weight: 300;
+	font-size: 25px;
+}
 
 .page-base header a {
 	text-decoration: none;
@@ -577,6 +768,7 @@
 	padding: 2rem;
 	text-align: center;
 	text-transform: uppercase;
+	align-self: start;
 }
 
 .page-base h1 {
@@ -586,6 +778,7 @@
 	color: #ff5056;
 	font-size: 50px;
 	line-height: 1;
+	margin: 0;
 }
 
 .page-base h4 {
@@ -596,34 +789,90 @@
 	font-size: 20px;
 }
 
-.wrap {
-  column-count: 2;
-  padding: 1rem;
-}
-
 .page-base form {
-	width: 90%;
-	height: 100%;
-	margin: auto;
-	place-items: center;
-	text-align: left;
-	font-family: quasimoda, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #707070;
-	font-size: 30px;
-	line-height: 3;
-	margin-bottom: 2rem;
+	columns: 2;
+	width: 80%;
+	/*margin: auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-left: 16rem;
 }
 
-.page-base form input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
+/*START CODE FOR OPTIONS*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070;
+  font-size: 30px;
+  text-align: left;
 }
-/* THIS GETS RID OF THE DEFAULT STYLES, SO HOW DO I GET THE CUSTOM ONES? :(*/
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff5056;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #a1cd40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: .315rem;
+  left: .315rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: white;
+} 
+
+/*END CODE FOR OPTIONS HERE*/
 
 .page-base img {
 	height: 4rem;
@@ -636,22 +885,762 @@
 .page-base .navigation ul {	
 
 	list-style: none;
+	display: grid; 
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	place-items: center;
+	grid-gap: 10rem;
+	padding: 1rem;
+	margin-bottom: none;
+}
+
+/*FRUIT*/
+
+.page-fruit {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-fruit header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-fruit header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+	justify-self: start;
+}
+.page-fruit header .done {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-fruit header .done a {
+	color: #a1cd40;
+}
+
+.page-fruit header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-fruit header .account a {
+	color: #a1cd40;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.page-fruit header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-fruit main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+.page-fruit h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+	margin: 0;
+}
+
+.page-fruit h4 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 20px;
+}
+
+.page-fruit form {
+	columns: 2;
+	width: 90%;
+	/*margin: auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	margin-left: 8rem;
+}
+
+/*START CODE FOR OPTIONS*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff5056;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #a1cd40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: .315rem;
+  left: .315rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: white;
+} 
+
+/*END CODE FOR OPTIONS HERE*/
+
+.page-fruit img {
+	height: 4rem;
+	margin: 0;
+}
+
+.page-fruit .weight{
+	height: 2.5rem;
+}
+
+.page-fruit .navigation ul {	
+
+	list-style: none;
 	padding: .5rem;
 	display: grid; 
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 1fr;
 	place-items: center;
+	grid-gap: 10rem;
+	padding: 1rem;
+	margin: 0;
+}
+
+/*VEGGIE*/
+
+.page-veggie {
+	height: 100vh;
+	/*display: grid;*/
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	place-items: center;
+	font-family: quasimoda, sans-serif;
+}
+
+.page-veggie header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-veggie header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+	justify-self: start;
+}
+
+.page-veggie header .done {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-veggie header .done a {
+	color: #a1cd40;
+}
+
+.page-veggie header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-veggie header .account a {
+	color: #a1cd40;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.page-veggie header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-veggie main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+.page-veggie h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+	margin: 0;
+}
+
+.page-veggie h4 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 20px;
+}
+
+.page-veggie form {
+	columns: 2;
+	width: 80%;
+	/*margin: auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-left: 16rem;
+}
+
+/*START CODE FOR OPTIONS*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff5056;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #a1cd40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: .315rem;
+  left: .315rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: white;
+} 
+
+/*END CODE FOR OPTIONS HERE*/
+
+.page-veggie img {
+	height: 4rem;
+}
+
+.page-veggie .weight{
+	height: 2.5rem;
+}
+
+.page-veggie .navigation ul {	
+
+	list-style: none;
+	padding: .5rem;
+	display: grid; 
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	place-items: center;
+	grid-gap: 10rem;
 	padding: 1rem;
 }
 
-/*DETAILS*/
+/*PROTIEN*/
 
-.page-details body {
+.page-protien {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
+	/*place-items: center;*/
+	font-family: quasimoda, sans-serif;
+}
+
+.page-protien header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-protien header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+	justify-self: start;
+}
+
+.page-protien header .done {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-protien header .done a {
+	color: #a1cd40;
+}
+
+.page-protien header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-protien header .account a {
+	color: #a1cd40;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.page-protien header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-protien main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+.page-protien h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+	margin: 0;
+}
+
+.page-protien h4 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 20px;
+}
+
+.page-protien form {
+	columns: 2;
+	width: 90%;
+	/*margin: auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-left: 10rem;
+}
+
+/*START CODE FOR OPTIONS*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff5056;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #a1cd40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: .315rem;
+  left: .315rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: white;
+} 
+
+/*END CODE FOR OPTIONS HERE*/
+
+.page-protien img {
+	height: 4rem;
+}
+
+.page-protien .weight{
+	height: 2.5rem;
+}
+
+.page-protien .navigation ul {	
+
+	list-style: none;
+	padding: .5rem;
+	display: grid; 
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
 	place-items: center;
+	grid-gap: 10rem;
+	padding: 1rem;
+}
+
+
+/*ADD ON*/
+
+.page-add-on {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	/*place-items: center;*/
+	font-family: quasimoda, sans-serif;
+}
+
+.page-add-on header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-add-on header .back {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+	justify-self: start;
+}
+
+.page-add-on header .done {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+.page-add-on header .done a {
+	color: #a1cd40;
+}
+
+.page-add-on header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-add-on header .account a {
+	color: #a1cd40;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.page-add-on header a {
+	text-decoration: none;
+	color: #ff5056;
+}
+
+.page-add-on main {
+	padding: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+.page-add-on h1 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ff5056;
+	font-size: 50px;
+	line-height: 1;
+	margin: 0;
+}
+
+.page-add-on h4 {
+	font-family: quasimoda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #707070;
+	font-size: 20px;
+}
+
+.page-add-on form {
+	columns: 2;
+	width: 80%;
+	/*margin: auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	margin-left: 8rem;
+}
+
+/*START CODE FOR OPTIONS*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #707070;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff5056;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #a1cd40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: .315rem;
+  left: .315rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: white;
+} 
+
+/*END CODE FOR OPTIONS HERE*/
+
+.page-add-on img {
+	height: 4rem;
+	margin: 0;
+}
+
+.page-add-on .weight{
+	height: 2.5rem;
+}
+
+.page-add-on .navigation ul {	
+
+	list-style: none;
+	padding: .5rem;
+	display: grid; 
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	place-items: center;
+	grid-gap: 10rem;
+	padding: 1rem;
+	margin: 0;
+}
+
+/*DETAILS*/
+
+.page-details {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	place-items: center;
+	/*padding: 2rem;*/
 	font-family: quasimoda, sans-serif;
 }
 
@@ -660,18 +1649,35 @@
 	font-weight: 700;
 	font-style: normal;
 	font-size: 30px;
-	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
+	padding: 3rem;
 }
 
 .page-details .add-more {
-	grid-column: 6;
+	grid-column: 5;
+	margin-right: 2rem;
+	justify-self: end;
 }
 
 .page-details .add-more a {
 	color: #a1cd40;
 
+}
+
+.page-details header .account {
+	grid-column: 6;
+	grid-row: 1;
+	justify-self: end;
+}
+
+.page-details header .account a {
+	grid-column: 6;
+	grid-row: 1;
+	color: #a1cd40;
+	font-size: 25px;
+	font-weight: 300;
+	text-decoration: none;
 }
 
 
@@ -702,7 +1708,7 @@
 }
 
 .page-details main {
-	padding: 2rem;
+	/*padding: 2rem;*/
 	text-align: center;
 	text-transform: uppercase;
 	margin: auto;
@@ -715,6 +1721,7 @@
 	color: #ff5056;
 	font-size: 50px;
 	line-height: 1;
+	margin: 0;
 }
 
 .page-details .order-details {
@@ -747,7 +1754,7 @@
 	font-size: 40px;
 }
 
-.total {
+.page-details .total {
 	grid-column: 2;
 	grid-row: 2;
 	justify-self: end;
@@ -777,6 +1784,7 @@
 	text-transform: uppercase;
 	grid-column: 1/-1;
 	grid-row: 3;
+	margin-bottom: 2rem;
 
 }
 
@@ -790,9 +1798,9 @@
 }
 
 .page-details .btn-primary {
-	padding: 3rem;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	/*padding: 3rem;*/
+	/*margin-top: 2rem;
+	margin-bottom: 1rem;*/
 	grid-row: 4;
 	grid-column: 1 / -1;
 	justify-self: center;
@@ -800,7 +1808,7 @@
 }
 
 .page-details .btn-primary a {
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -816,31 +1824,46 @@
 
 /*TOTAL*/
 
-.page-total body {
+.page-total {
 	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+/*	display: grid;
+	place-items: center;*/
 	font-family: quasimoda, sans-serif;
 }
 
 .page-total header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
 	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
-.page-total header a {
-	text-decoration: none;
-	color: #ff5056;
+.page-total header .back {
+	grid-column: 1;
+	grid-row: 1;
 }
 
-.page-total .back {
+.page-total header .back a {
 	font-family: quasimoda, sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	color: #ff5056;
 	font-size: 30px;
 	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.page-total .account {
+	grid-column: 6;
+}
+
+.page-total .account a {
+	color: #a1cd40;
+	text-decoration: none;
+
 }
 
 .page-total main {
@@ -872,7 +1895,7 @@
 }
 
 .page-total .btn-primary a {
-	padding: 1.25rem 1rem;
+	padding: 1.25rem 2rem 1rem;
 	line-height: 1;
 	border-radius: 50px;
 	display: inline-block;
@@ -891,32 +1914,44 @@
 
 /*SCAN*/
 
-.page-scan body  {
+.page-scan {
 	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
 	font-family: quasimoda, sans-serif;
 }
 
 .page-scan header {
-	padding: 3rem;
-}
-
-.page-scan header a {
-	text-decoration: none;
-	color: #ff5056;
-}
-
-.page-scan .back {
 	font-family: quasimoda, sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	color: #ff5056;
 	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	padding: 3rem;
+}
+
+.page-scan header .back a {
+	grid-column: 1;
+	grid-row: 1;
+	color: #ff5056;
+	text-decoration: none;
 	text-transform: uppercase;
 }
+
+.page-scan header .account {
+	grid-column: 6;
+	grid-row: 1;
+}
+
+.page-scan header .account a {
+	grid-column: 6;
+	grid-row: 1;
+	color: #a1cd40;
+	font-size: 25px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
 
 .page-scan main {
 	padding: 2rem;
@@ -941,13 +1976,32 @@
 /*CONFIRMATION*/
 
 
-body .page-confirmation {
+.page-confirmation {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	place-items: center;
+	grid-template-rows: auto, 1fr;
 	font-family: quasimoda, sans-serif;
+}
+
+.page-confirmation header {
+	font-family: quasimoda, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.page-confirmation .main-menu {
+	grid-column: 1;
+	justify-content: start;
+}
+
+.page-confirmation .main-menu a {
+	color: #ff5056;
+	text-decoration: none;
+
 }
 
 .page-confirmation main {
