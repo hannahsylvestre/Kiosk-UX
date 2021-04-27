@@ -31,7 +31,7 @@ body {
 }
 
 .page-start .btn-primary {
-	padding: 3rem;
+	padding: 1.25rem 2rem 1rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
@@ -1630,7 +1630,7 @@ border-radius: 10px;
 	place-items: center;
 	grid-gap: 10rem;
 	padding: 1rem;
-	margin: 0;
+	margin-bottom: 2rem;
 }
 
 /*DETAILS*/
